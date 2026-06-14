@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ Tính Tuổi Tinh Tế</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Thêm phông chữ Poppins từ Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Age Calculator</h1>
+                <p>Nhập ngày tháng năm sinh của bạn</p>
+            </div>
+            
+            <div class="card-body">
+                <div class="inputs-row">
+                    <div class="input-group">
+                        <label for="day">NGÀY</label>
+                        <input type="number" id="day" placeholder="DD" min="1" max="31">
+                        <span class="error-text" id="day-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="month">THÁNG</label>
+                        <input type="number" id="month" placeholder="MM" min="1" max="12">
+                        <span class="error-text" id="month-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="year">NĂM</label>
+                        <input type="number" id="year" placeholder="YYYY">
+                        <span class="error-text" id="year-error"></span>
+                    </div>
+                    <button class="calculate-btn" id="calculate-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="divider-line"></div>
+                
+                <div class="results-row">
+                    <p><span class="result-value" id="result-years">—</span> <span class="result-unit">năm</span></p>
+                    <p><span class="result-value" id="result-months">—</span> <span class="result-unit">tháng</span></p>
+                    <p><span class="result-value" id="result-days">—</span> <span class="result-unit">ngày</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
